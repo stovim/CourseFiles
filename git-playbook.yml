@@ -7,10 +7,10 @@
       yum: name=git state=latest
 
     - name: Clone Pet-Clinic
-      git: repo=https://github.com/meyals/spring-petclinic dest=/home/ec2-user/PetClinic/ update=no
+      git: repo=https://github.com/stovim/spring-petclinic dest=/home/ec2-user/PetClinic/ update=no
 
     - name: Clone CourseFiles
-      git: repo=https://github.com/meyals/CourseFiles dest=/home/ec2-user/CourseFiles/ update=no
+      git: repo=https://github.com/stovim/CourseFiles dest=/home/ec2-user/CourseFiles/ update=no
     
     - name: Install Maven
       get_url: url=http://apache.mivzakim.net/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz dest=/home/ec2-user/Maven mode=0777
